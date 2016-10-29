@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Life
+
+  Created by Devin on 1/26/16.
+  Copyright © 2016 wanglei. All rights reserved.
+*/
+"App_AutoUpdate_AlertTitle"="News!";
+"App_AutoUpdate_AlertSkip"="Leave me";
+"App_AutoUpdate_AlertUpdate"="Look Look";

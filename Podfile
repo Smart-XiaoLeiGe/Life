@@ -1,0 +1,7 @@
+platform:ios,'7.0'
+pod 'AFNetworking', '~> 3.0'
+pod 'UMengAnalytics'
+pod 'UMengSocial', '4.3'
+pod 'Masonry'
+pod 'pop', '~> 1.0'
+pod 'CocoaLumberjack'

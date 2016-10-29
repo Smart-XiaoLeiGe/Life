@@ -1,0 +1,20 @@
+//
+//  Life.pch
+//  Life
+//
+//  Created by Devin on 1/24/16.
+//  Copyright © 2016 wanglei. All rights reserved.
+//
+
+#ifndef Life_pch
+#define Life_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "FrameworkMarco.h"
+#import "UMengsManager.h"
+#import "LogManager.h"
+#import "LifeBaseViewController.h"
+#import <objc/runtime.h>
+
+#endif /* Life_pch */
