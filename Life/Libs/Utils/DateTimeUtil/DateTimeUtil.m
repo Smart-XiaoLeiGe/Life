@@ -95,11 +95,11 @@ static DateTimeUtil *_instance=NULL;
         return @"";
     }
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [calendar components:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit) fromDate:date];
+    NSDateComponents *components = [calendar components:(NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:date];
     NSInteger day = [components day];
     
     NSDate *now = [NSDate date];
-    NSDateComponents *nowComponents = [calendar components:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit) fromDate:now];
+    NSDateComponents *nowComponents = [calendar components:(NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:now];
     NSInteger nowDay = [nowComponents day];
     if (day == nowDay) {
         return @"Today";
@@ -117,7 +117,7 @@ static DateTimeUtil *_instance=NULL;
         return @"";
     }
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [calendar components:(NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit) fromDate:date];
+    NSDateComponents *components = [calendar components:(NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:date];
     NSInteger hour = [components hour];
     
     return [NSString stringWithFormat:@"%li:00",(long)hour];
@@ -148,7 +148,7 @@ static DateTimeUtil *_instance=NULL;
 {
     NSDate * now = [NSDate date];
     NSCalendar * cal = [NSCalendar currentCalendar];
-    unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
+    unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
     NSDateComponents * todayComps = [cal components:unitFlags fromDate:now];
     
     NSDateComponents *fireComps = [[NSDateComponents alloc] init];

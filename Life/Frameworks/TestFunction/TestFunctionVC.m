@@ -29,8 +29,19 @@
     //    self.disableGesture = YES;
     timerArray=[[NSArray alloc] initWithObjects:@"changeImage",@"rain", nil];
     titlesArray=@[
-                  @[@[@"draw",@"TestDrawVC"],@[@"fingerPrint",@"TestFingerPrintVC"],@[@"rain",@"TestRainVC"],@[@"checkUpdate",@"TestCheckUpdateVC"],@[@"systemEvent",@"TestSystemEventVC"],@[@"playMusic",@"TestPlayMusicVC"],@[@"coreSpotlight",@"TestCoreSpotlightVC"],@[@"Sim",@"TestSimCardVC"],@[@"NSLocale",@"TestNSLocaleVC"],@[@"ImagePicker",@"TestImagePickerVC"]]
-                  ];
+                  @[@[@"draw",@"TestDrawVC"],
+                    @[@"fingerPrint",@"TestFingerPrintVC"],
+                    @[@"rain",@"TestRainVC"],
+                    @[@"checkUpdate",@"TestCheckUpdateVC"],
+                    @[@"systemEvent",@"TestSystemEventVC"],
+                    @[@"playMusic",@"TestPlayMusicVC"],
+                    @[@"coreSpotlight",@"TestCoreSpotlightVC"],
+                    @[@"Sim",@"TestSimCardVC"],
+                    @[@"NSLocale",@"TestNSLocaleVC"],
+                    @[@"ImagePicker",@"TestImagePickerVC"],
+                    @[@"Objective-c 基础",@"TestObjectiveCVC"],
+                    @[@"CoreBluetooth",@"TestCoreBluetoothVC"],
+                    ]];
     sectionTitlesArray=@[@"Demo",@"API"];
     _testTableView=[[UITableView alloc] initWithFrame:FM_ScreenBounds];
     _testTableView.delegate=self;

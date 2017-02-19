@@ -38,10 +38,9 @@
     //    NSString *s = @"This is a test string";
     //    s =[s substringWithRange:NSMakeRange(3, [s length])];
     //    NSLog(@"%@",s);
-    
-    NSString* hello = [NSString stringWithFormat:@"Hello world"];
-    NSLog(@"What you say is %@",hello);
-    [hello release];
+
+    NSArray *array = @[@"",@""];
+    [LogUtil Debug:@"testCrash" message:array[2]];
 }
 
 -(void)viewDidDisappear:(BOOL)animated

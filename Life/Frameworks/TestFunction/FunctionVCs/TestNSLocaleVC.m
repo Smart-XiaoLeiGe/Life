@@ -257,7 +257,8 @@
     
      NSDictionary *resultDic1 = [self filterTwoArray:iosIn6931 array2:androidIn6931];
      NSDictionary *resultDic = [self filterTwoArray:iOSLanguageArray array2:androidLanguageArray];
-    
+    [LogUtil Debug:@"resultDic1" message:resultDic1];
+    [LogUtil Debug:@"resultDic" message:resultDic];
     
 }
 

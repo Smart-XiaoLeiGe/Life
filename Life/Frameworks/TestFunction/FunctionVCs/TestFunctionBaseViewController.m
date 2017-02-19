@@ -43,13 +43,13 @@
     [self.view addSubview:navigationBarView];
     navigationBarView.backgroundColor = [UIColor lightTextColor];
     
-    contentView = [[UIView alloc] initWithFrame:CGRectMake(0, FM_ScreenHeight-60, FM_ScreenWidth, FM_ScreenHeight-100)];
-    [self.view addSubview:contentView];
-    contentView.backgroundColor = [UIColor greenColor];
-    
-    bottomBarView = [[UIView alloc] initWithFrame:CGRectMake(0, FM_ScreenHeight-40, FM_ScreenWidth, 40)];
-    bottomBarView.backgroundColor = [UIColor orangeColor];
-    [self.view addSubview:bottomBarView];
+//    contentView = [[UIView alloc] initWithFrame:CGRectMake(0, FM_ScreenHeight-60, FM_ScreenWidth, FM_ScreenHeight-100)];
+//    [self.view addSubview:contentView];
+//    contentView.backgroundColor = [UIColor greenColor];
+//    
+//    bottomBarView = [[UIView alloc] initWithFrame:CGRectMake(0, FM_ScreenHeight-40, FM_ScreenWidth, 40)];
+//    bottomBarView.backgroundColor = [UIColor orangeColor];
+//    [self.view addSubview:bottomBarView];
 }
 
 -(void)closeTestFunctionVC

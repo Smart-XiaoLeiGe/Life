@@ -60,6 +60,10 @@
 		03FA4E3A1C564A0E003206A8 /* libUMCheckUpdate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FA4E351C564A0E003206A8 /* libUMCheckUpdate.a */; };
 		03FA4E3B1C564A0E003206A8 /* libUMOnlineConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FA4E381C564A0E003206A8 /* libUMOnlineConfig.a */; };
 		1AFE6E90694D88B045EF943E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B068B798DA3DE1E7B04D572 /* libPods.a */; };
+		8D2D01A41DDB421600FA2B4C /* TestCoreBluetoothVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D01A31DDB421600FA2B4C /* TestCoreBluetoothVC.m */; };
+		8D2D01A61DDB428400FA2B4C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2D01A51DDB428400FA2B4C /* CoreBluetooth.framework */; };
+		8D9E958C1DC4A98A008BF6EC /* TestObjectiveCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E958B1DC4A98A008BF6EC /* TestObjectiveCVC.m */; };
+		8D9E958F1DC4AD31008BF6EC /* TestBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E958E1DC4AD31008BF6EC /* TestBaseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +182,13 @@
 		03FA4E391C564A0E003206A8 /* UMOnlineConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMOnlineConfig.h; sourceTree = "<group>"; };
 		07DF1CAE25456AAD8FD43168 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		0B068B798DA3DE1E7B04D572 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D2D01A21DDB421600FA2B4C /* TestCoreBluetoothVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreBluetoothVC.h; sourceTree = "<group>"; };
+		8D2D01A31DDB421600FA2B4C /* TestCoreBluetoothVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreBluetoothVC.m; sourceTree = "<group>"; };
+		8D2D01A51DDB428400FA2B4C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		8D9E958A1DC4A98A008BF6EC /* TestObjectiveCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjectiveCVC.h; sourceTree = "<group>"; };
+		8D9E958B1DC4A98A008BF6EC /* TestObjectiveCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectiveCVC.m; sourceTree = "<group>"; };
+		8D9E958D1DC4AD31008BF6EC /* TestBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBaseModel.h; sourceTree = "<group>"; };
+		8D9E958E1DC4AD31008BF6EC /* TestBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBaseModel.m; sourceTree = "<group>"; };
 		90587AF495606BFFAF5DF4C4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,6 +197,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D2D01A61DDB428400FA2B4C /* CoreBluetooth.framework in Frameworks */,
 				03CC80221CA042D800915966 /* CoreTelephony.framework in Frameworks */,
 				03CC7FF21C9FF6DA00915966 /* MobileCoreServices.framework in Frameworks */,
 				03CC7FF01C9FF6D300915966 /* UIKit.framework in Frameworks */,
@@ -264,6 +276,7 @@
 		0355D0251C5F5C82000B023C /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				03CC7FDE1C9FEE9400915966 /* TestFunction */,
 				0355D0291C5F6222000B023C /* IDataManagerDelegate.h */,
 				0355D0261C5F5CA5000B023C /* DataManager.h */,
 				0355D0271C5F5CA5000B023C /* DataManager.m */,
@@ -352,7 +365,6 @@
 		03ACCE711C5E0E0A00207572 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				03ACCE761C5E0E5500207572 /* LogUtil */,
 				03ACCE721C5E0E0A00207572 /* DateTimeUtil */,
 			);
 			path = Utils;
@@ -375,7 +387,8 @@
 				03ACCE7A1C5E134900207572 /* UncaughtExceptionHandler.h */,
 				03ACCE7B1C5E134900207572 /* UncaughtExceptionHandler.mm */,
 			);
-			path = LogUtil;
+			name = LogUtil;
+			path = ../../Libs/Utils/LogUtil;
 			sourceTree = "<group>";
 		};
 		03ACCE7D1C5E2E1400207572 /* Life */ = {
@@ -392,6 +405,7 @@
 			children = (
 				03ACCE811C5E2E1400207572 /* LogManager.h */,
 				03ACCE821C5E2E1400207572 /* LogManager.m */,
+				03ACCE761C5E0E5500207572 /* LogUtil */,
 			);
 			path = Logs;
 			sourceTree = "<group>";
@@ -399,6 +413,8 @@
 		03ACCE831C5E2E1400207572 /* UMeng */ = {
 			isa = PBXGroup;
 			children = (
+				03FA4E341C564A0E003206A8 /* UMCheckUpdate */,
+				03FA4E371C564A0E003206A8 /* UMOnlineConfig */,
 				03298ADE1CCCED0F00F8DBCE /* CustomMonitorLogic */,
 				03ACCE841C5E2E1400207572 /* UMengsManager.h */,
 				03ACCE851C5E2E1400207572 /* UMengsManager.m */,
@@ -418,8 +434,8 @@
 		03B02C641C54A601009A6BDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D01B1461E5978E10090FB1F /* MultiThread */,
 				03CC7FE21C9FEF6F00915966 /* Marcos */,
-				03CC7FDE1C9FEE9400915966 /* TestFunction */,
 				0355D0251C5F5C82000B023C /* DataManager */,
 				03ACCE7D1C5E2E1400207572 /* Life */,
 				03ACCE801C5E2E1400207572 /* Logs */,
@@ -436,8 +452,6 @@
 			isa = PBXGroup;
 			children = (
 				03ACCE711C5E0E0A00207572 /* Utils */,
-				03FA4E341C564A0E003206A8 /* UMCheckUpdate */,
-				03FA4E371C564A0E003206A8 /* UMOnlineConfig */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -462,6 +476,7 @@
 		03CC7FDE1C9FEE9400915966 /* TestFunction */ = {
 			isa = PBXGroup;
 			children = (
+				8D9E95901DC4AD39008BF6EC /* Model */,
 				03CC7FF41CA017D400915966 /* TestFunctionBaseViewController.h */,
 				03CC7FF51CA017D400915966 /* TestFunctionBaseViewController.m */,
 				03CC80141CA02FF900915966 /* TestFunctionVC.h */,
@@ -469,7 +484,8 @@
 				03CC800F1CA01ED000915966 /* TestResources */,
 				03CC7FF31CA015AF00915966 /* FunctionVCs */,
 			);
-			path = TestFunction;
+			name = TestFunction;
+			path = ../TestFunction;
 			sourceTree = "<group>";
 		};
 		03CC7FE21C9FEF6F00915966 /* Marcos */ = {
@@ -503,6 +519,10 @@
 				035203BE1CA38EF6003A2DFA /* TestNSLocaleVC.m */,
 				03930ADA1CC86AE800F8CB85 /* TestImagePickerVC.h */,
 				03930ADB1CC86AE800F8CB85 /* TestImagePickerVC.m */,
+				8D9E958A1DC4A98A008BF6EC /* TestObjectiveCVC.h */,
+				8D9E958B1DC4A98A008BF6EC /* TestObjectiveCVC.m */,
+				8D2D01A21DDB421600FA2B4C /* TestCoreBluetoothVC.h */,
+				8D2D01A31DDB421600FA2B4C /* TestCoreBluetoothVC.m */,
 			);
 			path = FunctionVCs;
 			sourceTree = "<group>";
@@ -540,7 +560,8 @@
 				03FA4E351C564A0E003206A8 /* libUMCheckUpdate.a */,
 				03FA4E361C564A0E003206A8 /* UMCheckUpdate.h */,
 			);
-			path = UMCheckUpdate;
+			name = UMCheckUpdate;
+			path = ../../Libs/UMCheckUpdate;
 			sourceTree = "<group>";
 		};
 		03FA4E371C564A0E003206A8 /* UMOnlineConfig */ = {
@@ -549,12 +570,14 @@
 				03FA4E381C564A0E003206A8 /* libUMOnlineConfig.a */,
 				03FA4E391C564A0E003206A8 /* UMOnlineConfig.h */,
 			);
-			path = UMOnlineConfig;
+			name = UMOnlineConfig;
+			path = ../../Libs/UMOnlineConfig;
 			sourceTree = "<group>";
 		};
 		3FC9C3A0FC4239411ED1E26D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D2D01A51DDB428400FA2B4C /* CoreBluetooth.framework */,
 				03CC80211CA042D800915966 /* CoreTelephony.framework */,
 				03CC7FF11C9FF6DA00915966 /* MobileCoreServices.framework */,
 				03CC7FEF1C9FF6D300915966 /* UIKit.framework */,
@@ -576,6 +599,22 @@
 				07DF1CAE25456AAD8FD43168 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D01B1461E5978E10090FB1F /* MultiThread */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MultiThread;
+			sourceTree = "<group>";
+		};
+		8D9E95901DC4AD39008BF6EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E958D1DC4AD31008BF6EC /* TestBaseModel.h */,
+				8D9E958E1DC4AD31008BF6EC /* TestBaseModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -775,9 +814,11 @@
 				03CC800B1CA01D7500915966 /* TestPlayMusicVC.m in Sources */,
 				03CC80251CA0433D00915966 /* TestSimCardVC.m in Sources */,
 				0366BB4E1C52578E00F13C68 /* AppDelegate.m in Sources */,
+				8D9E958C1DC4A98A008BF6EC /* TestObjectiveCVC.m in Sources */,
 				03298AF31CCD03D800F8DBCE /* WUserStatistics.m in Sources */,
 				03CC7FFC1CA018F300915966 /* TestFingerPrintVC.m in Sources */,
 				03ACCE8E1C5E3C8D00207572 /* LifeBaseViewController.m in Sources */,
+				8D2D01A41DDB421600FA2B4C /* TestCoreBluetoothVC.m in Sources */,
 				03ACCE861C5E2E1400207572 /* LifeManager.m in Sources */,
 				03ACCE751C5E0E0A00207572 /* DateTimeUtil.m in Sources */,
 				03B02C6B1C54AAE6009A6BDB /* LifeViewController.m in Sources */,
@@ -792,6 +833,7 @@
 				0366BB4B1C52578E00F13C68 /* main.m in Sources */,
 				03930ADC1CC86AE800F8CB85 /* TestImagePickerVC.m in Sources */,
 				03ACCE671C5B85BA00207572 /* DebugViewController.m in Sources */,
+				8D9E958F1DC4AD31008BF6EC /* TestBaseModel.m in Sources */,
 				03ACCE791C5E0E5500207572 /* LogUtil.m in Sources */,
 				03298ADD1CCCECA700F8DBCE /* AppMonitorManager.m in Sources */,
 				03298AEF1CCD03D800F8DBCE /* UIControl+userStastistics.m in Sources */,
