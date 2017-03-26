@@ -41,6 +41,7 @@
                     @[@"ImagePicker",@"TestImagePickerVC"],
                     @[@"Objective-c 基础",@"TestObjectiveCVC"],
                     @[@"CoreBluetooth",@"TestCoreBluetoothVC"],
+                    @[@"MultiThread",@"TestMultiThreadVC"],
                     ]];
     sectionTitlesArray=@[@"Demo",@"API"];
     _testTableView=[[UITableView alloc] initWithFrame:FM_ScreenBounds];

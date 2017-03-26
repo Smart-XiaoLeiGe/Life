@@ -69,7 +69,7 @@
     debugManager = [[DebugManager alloc] init];
     [debugManager setDebugManager:self withDebugPageBlock:^{
     } hideBlock:^{
-            [self testS];
+//            [self testS];
     } gestureAction:@selector(doGesture:)];
 }
 

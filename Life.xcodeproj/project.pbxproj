@@ -62,6 +62,10 @@
 		1AFE6E90694D88B045EF943E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B068B798DA3DE1E7B04D572 /* libPods.a */; };
 		8D2D01A41DDB421600FA2B4C /* TestCoreBluetoothVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D01A31DDB421600FA2B4C /* TestCoreBluetoothVC.m */; };
 		8D2D01A61DDB428400FA2B4C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2D01A51DDB428400FA2B4C /* CoreBluetooth.framework */; };
+		8D3639E61E7D465900AED748 /* BaseThreadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3639E51E7D465900AED748 /* BaseThreadManager.m */; };
+		8D79D7441E76AD1A004F6660 /* GCDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D79D7431E76AD1A004F6660 /* GCDManager.m */; };
+		8D79D7481E76D01D004F6660 /* TestMultiThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D79D7471E76D01D004F6660 /* TestMultiThreadVC.m */; };
+		8D79D74B1E76D121004F6660 /* MultiThreadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D79D74A1E76D121004F6660 /* MultiThreadManager.m */; };
 		8D9E958C1DC4A98A008BF6EC /* TestObjectiveCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E958B1DC4A98A008BF6EC /* TestObjectiveCVC.m */; };
 		8D9E958F1DC4AD31008BF6EC /* TestBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E958E1DC4AD31008BF6EC /* TestBaseModel.m */; };
 /* End PBXBuildFile section */
@@ -185,6 +189,15 @@
 		8D2D01A21DDB421600FA2B4C /* TestCoreBluetoothVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreBluetoothVC.h; sourceTree = "<group>"; };
 		8D2D01A31DDB421600FA2B4C /* TestCoreBluetoothVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreBluetoothVC.m; sourceTree = "<group>"; };
 		8D2D01A51DDB428400FA2B4C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		8D3639E41E7D465900AED748 /* BaseThreadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseThreadManager.h; sourceTree = "<group>"; };
+		8D3639E51E7D465900AED748 /* BaseThreadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseThreadManager.m; sourceTree = "<group>"; };
+		8D79D7421E76AD1A004F6660 /* GCDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDManager.h; sourceTree = "<group>"; };
+		8D79D7431E76AD1A004F6660 /* GCDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDManager.m; sourceTree = "<group>"; };
+		8D79D7451E76AEE7004F6660 /* MultiThreadProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadProtocol.h; sourceTree = "<group>"; };
+		8D79D7461E76D01D004F6660 /* TestMultiThreadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMultiThreadVC.h; sourceTree = "<group>"; };
+		8D79D7471E76D01D004F6660 /* TestMultiThreadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMultiThreadVC.m; sourceTree = "<group>"; };
+		8D79D7491E76D121004F6660 /* MultiThreadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadManager.h; sourceTree = "<group>"; };
+		8D79D74A1E76D121004F6660 /* MultiThreadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadManager.m; sourceTree = "<group>"; };
 		8D9E958A1DC4A98A008BF6EC /* TestObjectiveCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjectiveCVC.h; sourceTree = "<group>"; };
 		8D9E958B1DC4A98A008BF6EC /* TestObjectiveCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectiveCVC.m; sourceTree = "<group>"; };
 		8D9E958D1DC4AD31008BF6EC /* TestBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBaseModel.h; sourceTree = "<group>"; };
@@ -523,6 +536,8 @@
 				8D9E958B1DC4A98A008BF6EC /* TestObjectiveCVC.m */,
 				8D2D01A21DDB421600FA2B4C /* TestCoreBluetoothVC.h */,
 				8D2D01A31DDB421600FA2B4C /* TestCoreBluetoothVC.m */,
+				8D79D7461E76D01D004F6660 /* TestMultiThreadVC.h */,
+				8D79D7471E76D01D004F6660 /* TestMultiThreadVC.m */,
 			);
 			path = FunctionVCs;
 			sourceTree = "<group>";
@@ -604,6 +619,13 @@
 		8D01B1461E5978E10090FB1F /* MultiThread */ = {
 			isa = PBXGroup;
 			children = (
+				8D79D7421E76AD1A004F6660 /* GCDManager.h */,
+				8D79D7431E76AD1A004F6660 /* GCDManager.m */,
+				8D79D7451E76AEE7004F6660 /* MultiThreadProtocol.h */,
+				8D79D7491E76D121004F6660 /* MultiThreadManager.h */,
+				8D79D74A1E76D121004F6660 /* MultiThreadManager.m */,
+				8D3639E41E7D465900AED748 /* BaseThreadManager.h */,
+				8D3639E51E7D465900AED748 /* BaseThreadManager.m */,
 			);
 			path = MultiThread;
 			sourceTree = "<group>";
@@ -687,10 +709,11 @@
 				TargetAttributes = {
 					0366BB451C52578E00F13C68 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = RN649S32T9;
+						DevelopmentTeam = K26363RWJP;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -817,6 +840,7 @@
 				8D9E958C1DC4A98A008BF6EC /* TestObjectiveCVC.m in Sources */,
 				03298AF31CCD03D800F8DBCE /* WUserStatistics.m in Sources */,
 				03CC7FFC1CA018F300915966 /* TestFingerPrintVC.m in Sources */,
+				8D79D74B1E76D121004F6660 /* MultiThreadManager.m in Sources */,
 				03ACCE8E1C5E3C8D00207572 /* LifeBaseViewController.m in Sources */,
 				8D2D01A41DDB421600FA2B4C /* TestCoreBluetoothVC.m in Sources */,
 				03ACCE861C5E2E1400207572 /* LifeManager.m in Sources */,
@@ -828,6 +852,8 @@
 				03CC7FF61CA017D400915966 /* TestFunctionBaseViewController.m in Sources */,
 				035203BF1CA38EF6003A2DFA /* TestNSLocaleVC.m in Sources */,
 				03CC80081CA01CB200915966 /* TestSystemEventVC.m in Sources */,
+				8D79D7441E76AD1A004F6660 /* GCDManager.m in Sources */,
+				8D3639E61E7D465900AED748 /* BaseThreadManager.m in Sources */,
 				03298AF11CCD03D800F8DBCE /* WHookUtility.m in Sources */,
 				0355D0281C5F5CA5000B023C /* DataManager.m in Sources */,
 				0366BB4B1C52578E00F13C68 /* main.m in Sources */,
@@ -839,6 +865,7 @@
 				03298AEF1CCD03D800F8DBCE /* UIControl+userStastistics.m in Sources */,
 				03298AE11CCCED3200F8DBCE /* UIViewController+AppMonitor.m in Sources */,
 				03CC80021CA01A8800915966 /* TestCheckUpdateVC.m in Sources */,
+				8D79D7481E76D01D004F6660 /* TestMultiThreadVC.m in Sources */,
 				03ACCE871C5E2E1400207572 /* LogManager.m in Sources */,
 				03298AF01CCD03D800F8DBCE /* UIViewController+userStastistics.m in Sources */,
 				03ACCE881C5E2E1400207572 /* UMengsManager.m in Sources */,
@@ -983,7 +1010,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = RN649S32T9;
+				DEVELOPMENT_TEAM = K26363RWJP;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = Life/Life.pch;
 				INFOPLIST_FILE = Life/Info.plist;
@@ -996,6 +1023,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilitycoe.Life;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b44b2bbc-f8e9-4c3a-a6a2-1c612a0a9952";
+				PROVISIONING_PROFILE_SPECIFIER = MobilityCoE;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1004,7 +1034,7 @@
 			baseConfigurationReference = 07DF1CAE25456AAD8FD43168 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RN649S32T9;
+				DEVELOPMENT_TEAM = K26363RWJP;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = Life/Life.pch;
 				INFOPLIST_FILE = Life/Info.plist;
@@ -1017,6 +1047,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilitycoe.Life;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b44b2bbc-f8e9-4c3a-a6a2-1c612a0a9952";
+				PROVISIONING_PROFILE_SPECIFIER = MobilityCoE;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
